@@ -1,0 +1,66 @@
+:root {
+  --base: rgb(21, 21, 65);
+}
+
+body {
+  background: var(--base);
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  filter: blur(0px);
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+  flex-direction: column;
+}
+input {
+  width: 110px;
+  border: 0.5px solid #fff;
+  outline: none;
+}
+
+/* .sample {
+  width: 300px;
+  background: orangered;
+  text-align: center;
+  padding: 2rem;
+} */
+
+.modal {
+  background: chartreuse;
+  width: 250px;
+  height: 20%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
+  animation: anim 0.5s ease;
+  transition: all 0.2s ease;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.display {
+  display: none;
+}
+
+@keyframes anim {
+  0% {
+    opacity: 0;
+    transform: scale(-1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+}
